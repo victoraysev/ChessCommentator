@@ -46,10 +46,11 @@ Welcome to Chess Commentator, a Python-based application built with Streamlit th
     pip install -r requirements.txt
     ```
 
-4. **Set up your OpenAI API key**:
+4. **Set up your environment variables**:
     - Create a `.env` file in the root directory of the project and add your OpenAI API key:
       ```plaintext
-      OPENAI_API_KEY=your_openai_api_key
+      API_GATEWAY_TOKEN=<>
+      LICHESS_API_TOKEN=<>
       ```
 
 ## Usage
