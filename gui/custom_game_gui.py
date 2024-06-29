@@ -16,9 +16,11 @@ def tab_custom_game(tab):
         lichess_api_token = os.getenv("LICHESS_API_TOKEN")
 
         gpt_api_token = None
+        show_commentary = False
         if st.checkbox("Show commentary analysis", value=True):
             st.write("Enter the API token (OPENAI):")
-            gpt_api_token = st.text_input("API token")
+            gpt_api_token = st.text_input("API token", type= "password")
+            show_commentary = True
 
         if st.button("Fetch and Show Game"):
             if not lichess_api_token:
@@ -26,8 +28,11 @@ def tab_custom_game(tab):
             else:
                 pgn_data, white_user, black_user = get_game_data(game_id, lichess_api_token)
                 pgn_game = chess.pgn.read_game(io.StringIO(pgn_data))
-
-                commentary_list, hashtags = get_commentary_list_and_hashtags(pgn_data, gpt_api_token, debug)
+                if show_commentary:
+                    commentary_list, hashtags = get_commentary_list_and_hashtags(pgn_data, gpt_api_token, debug)
+                else:
+                    commentary_list = {}
+                    hashtags = []
                 if pgn_data:
                     initialize_game(pgn_game, white_user, black_user, commentary_list, hashtags)
                 else:

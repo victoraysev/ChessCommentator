@@ -1,5 +1,3 @@
-import chess
-import io
 from gtts import gTTS
 import streamlit as st
 
@@ -27,7 +25,7 @@ def draw_sidebar():
 
     if ((move_index + 1) // 2) in commentary_list:
         player, comment = commentary_list[(move_index + 1) // 2]
-        if ((move_index + 1) % 2 == 0 and player == "white") or ((move_index + 1) % 2 == 1 and player == "black"):
+        if ((move_index + 1) % 2 == 0 and player.lower().strip() == "white") or ((move_index + 1) % 2 == 1 and player.lower().strip() == "black"):
             st.sidebar.write(f"Comment: {comment}")
             if st.sidebar.button("Play Comment"):
                 audio_file = text_to_speech(comment)

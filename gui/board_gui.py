@@ -1,4 +1,3 @@
-import io
 import chess.pgn
 import chess.svg
 import streamlit as st
