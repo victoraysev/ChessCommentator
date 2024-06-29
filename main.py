@@ -11,7 +11,7 @@ from initializer import initialize_board
 def main():
     st.session_state.debug = os.environ.get("DEBUG", False)
     if "pgn_game" not in st.session_state:
-        st.title("Chess Game Viewer")
+        st.title("Chess Game Commentator")
         # Create tabs
         tab1, tab2 = st.tabs(["Custom Game", "Popular Game"])
         # calls initialize_game function
