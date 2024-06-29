@@ -8,7 +8,7 @@ def mock_commentary():
 
 
 def get_commentary_list_and_hashtags(pgn, api_key="", debug=False):
-    if debug:
+    if int(debug):
         raw_commentary = mock_commentary()
     else:
         raw_commentary = generate_commentary(pgn, api_key)
