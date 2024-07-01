@@ -1,8 +1,12 @@
 # Chess Commentator
 
-Welcome to Chess Commentator, a Python-based application built with Streamlit that provides insightful commentary on chess games. This project uses the Lichess API to fetch game data, the ChatGPT API to generate commentary, and a Spring Boot application deployed on AWS Lambda to fetch pre-saved chess games and their commentaries. You can see the readme file for spring boot aplication from below link:
+Welcome to Chess Commentator, a Python-based application built with Streamlit that provides insightful commentary on chess games. This project uses the Lichess API to fetch game data, the ChatGPT API to generate commentary, and a Spring Boot application deployed on AWS Lambda to fetch pre-saved chess games and their commentaries. You can see the readme file for spring boot application from below link:
 
 https://github.com/utkuaysev/ChessCommentator/tree/master/ChessCommentatorJavaSource
+
+You can directly use the application from below link:
+
+https://chesscommentator.streamlit.app/
 
 ## Table of Contents
 
