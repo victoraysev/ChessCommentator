@@ -1,15 +1,15 @@
 from initializer import initialize_game
-from util.popular_game.api_popular_games import get_popular_games
+from util.presaved_game.api_presaved_games import get_presaved_games
 import streamlit as st
 
 
 
-def tab_popular_game(tab):
+def tab_presaved_game(tab):
     with tab:
         st.write("Select a popular game:")
-        #games_mock = mock_get_popular_games()
+        #games_mock = mock_get_presaved_games()
         if "game_from_api" not in st.session_state:
-            games = get_popular_games()
+            games = get_presaved_games()
             st.session_state.game_from_api = games
         else:
             games = st.session_state.game_from_api

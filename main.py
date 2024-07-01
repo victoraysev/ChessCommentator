@@ -2,8 +2,8 @@ import os
 
 import streamlit as st
 from gui.board_gui import draw_board
-from gui.custom_game_gui import tab_custom_game
-from gui.popular_game_gui import tab_popular_game
+from gui.new_game_gui import tab_new_game
+from gui.presaved_game_gui import tab_presaved_game
 from gui.sidebar_gui import draw_sidebar, draw_finished_sidebar
 from initializer import initialize_board
 
@@ -15,8 +15,8 @@ def main():
         # Create tabs
         tab1, tab2 = st.tabs(["New Game", "Pre-Saved Game"])
         # calls initialize_game function
-        tab_custom_game(tab1)
-        tab_popular_game(tab2)
+        tab_new_game(tab1)
+        tab_presaved_game(tab2)
     else:
         # calls initialize_board function
         initialize_board()

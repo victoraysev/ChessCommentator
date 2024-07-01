@@ -5,10 +5,10 @@ import chess
 import streamlit as st
 
 from initializer import initialize_game
-from util.custom_game.commentaries_util import get_commentary_list_and_hashtags
-from util.custom_game.pgn_util import get_game_data
+from util.new_game.commentaries_util import get_commentary_list_and_hashtags
+from util.new_game.pgn_util import get_game_data
 
-def tab_custom_game(tab):
+def tab_new_game(tab):
     debug = os.environ.get("DEBUG", False)
     with tab:
         st.write("Enter the game ID:")
