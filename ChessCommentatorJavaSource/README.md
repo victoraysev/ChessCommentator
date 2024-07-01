@@ -8,8 +8,6 @@ This directory contains the Java source code for the backend of the Chess Commen
 - [Architecture](#architecture)
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
-- [Contact](#contact)
 
 ## Features
 
@@ -74,13 +72,4 @@ The backend service is designed to be highly scalable and leverages several AWS 
 2. **Fetch Pre-Saved Games**:
     - Make a GET request to the appropriate API Gateway endpoint to fetch popular chess games and their commentaries.
 
-## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any questions or feedback, please reach out to:
-
-- Utku Aysev
-- [GitHub Profile](https://github.com/utkuaysev)
