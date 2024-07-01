@@ -1,6 +1,6 @@
 # Chess Commentator Java Source
 
-This directory contains the Java source code for the backend of the Chess Commentator application. The backend is a Spring Boot application that fetches popular chess games and their commentaries. It is deployed on AWS Lambda and uses API Gateway and DynamoDB to get the data.
+This directory contains the Java source code for the backend of the Chess Commentator application. The backend is a Spring Boot application that fetches pre-saved chess games and their commentaries. It is deployed on AWS Lambda and uses API Gateway and DynamoDB to get the data.
 
 ## Table of Contents
 
@@ -11,7 +11,7 @@ This directory contains the Java source code for the backend of the Chess Commen
 
 ## Features
 
-- **Fetch Pre-Saved Games**: Retrieve popular chess games and their commentaries.
+- **Fetch Pre-Saved Games**: Retrieve pre-saved chess games and their commentaries.
 - **AWS Integration**: Deployed on AWS Lambda with API Gateway and DynamoDB integration.
 - **Spring Boot Application**: Built with Spring Boot for robust and scalable backend services.
 
@@ -70,6 +70,6 @@ The backend service is designed to be highly scalable and leverages several AWS 
     - Use the endpoints provided by API Gateway to interact with the backend service.
 
 2. **Fetch Pre-Saved Games**:
-    - Make a GET request to the appropriate API Gateway endpoint to fetch popular chess games and their commentaries.
+    - Make a GET request to the appropriate API Gateway endpoint to fetch pre-saved chess games and their commentaries.
 
 
