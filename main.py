@@ -13,7 +13,7 @@ def main():
     if "pgn_game" not in st.session_state:
         st.title("Chess Game Commentator")
         # Create tabs
-        tab1, tab2 = st.tabs(["Custom Game", "Popular Game"])
+        tab1, tab2 = st.tabs(["New Game", "Pre-Saved Game"])
         # calls initialize_game function
         tab_custom_game(tab1)
         tab_popular_game(tab2)
