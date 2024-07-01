@@ -13,7 +13,7 @@ This directory contains the Java source code for the backend of the Chess Commen
 
 ## Features
 
-- **Fetch Popular Games**: Retrieve popular chess games and their commentaries.
+- **Fetch Pre-Saved Games**: Retrieve popular chess games and their commentaries.
 - **AWS Integration**: Deployed on AWS Lambda with API Gateway and DynamoDB integration.
 - **Spring Boot Application**: Built with Spring Boot for robust and scalable backend services.
 
@@ -71,7 +71,7 @@ The backend service is designed to be highly scalable and leverages several AWS 
 1. **API Gateway Endpoints**:
     - Use the endpoints provided by API Gateway to interact with the backend service.
 
-2. **Fetch Popular Games**:
+2. **Fetch Pre-Saved Games**:
     - Make a GET request to the appropriate API Gateway endpoint to fetch popular chess games and their commentaries.
 
 ## License

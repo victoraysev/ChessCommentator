@@ -6,7 +6,7 @@ import streamlit as st
 
 def tab_presaved_game(tab):
     with tab:
-        st.write("Select a popular game:")
+        st.write("Select a pre-saved game:")
         #games_mock = mock_get_presaved_games()
         if "game_from_api" not in st.session_state:
             games = get_presaved_games()
@@ -16,7 +16,7 @@ def tab_presaved_game(tab):
         game_options = {
             f"{game[1]} vs {game[2]} ({game[0].headers._tag_roster['Date']})": game[0].headers._tag_roster["Event"] for
             game in games}
-        selected_game = st.selectbox("Popular Games", options=list(game_options.keys()))
+        selected_game = st.selectbox("Pre-Saved Games", options=list(game_options.keys()))
         if st.button("Show Selected Game"):
             selected_game_id = game_options[selected_game]
             game_res = {}
