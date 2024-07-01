@@ -1,0 +1,11 @@
+white,12,ARM-777777 makes a critical mistake with 12. Qxd5, allowing zvonokchess to play 12... Qxf2+ and deliver a strong attack on the white king.
+
+black,13,zvonokchess follows up with 13... Bxg4+, sacrificing a bishop to open up the white king's position even further.
+
+white,15,ARM-777777 misses the threat with 15. Bg5, allowing zvonokchess to play 15... Qf3+ and continue the attack.
+
+black,16,zvonokchess plays a fantastic move with 16... Ba3+, putting the white king in a dangerous position.
+
+white,17,ARM-777777 blunders with 17. Kd2, allowing zvonokchess to finish the game with 17... Rxd5+ and forcing a resignation.
+
+#excitingcheckmate, #brilliantattack, #criticalmistakes
