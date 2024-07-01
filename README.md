@@ -8,6 +8,10 @@ You can directly use the application from below link:
 
 https://chesscommentator.streamlit.app/
 
+In this medium blog post you can see the detailed explanation about the application:
+
+https://medium.com/@victor.aysev/chesscommentator-enhancing-chess-analysis-with-ai-generated-commentaries-fc67afdef42f
+
 ## Table of Contents
 
 - [Features](#features)
